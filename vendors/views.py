@@ -40,7 +40,7 @@ class VendorPerformanceView(generics.RetrieveAPIView):
     permission_classes = [IsAuthenticated]
     queryset = Vendor.objects.all()
     serializer_class = VendorSerializer
-    lookup_field = 'vendor_code'
+    #lookup_field = 'vendor_code'
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         serializer = self.get_serializer(instance)
