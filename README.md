@@ -119,7 +119,11 @@ By putting authorization and token  in headers also add "Content-Type" and "appl
 ### using curl:
 -http://127.0.0.1:8000/api/purchase_orders/{po_id}/
 @@ -151,9 +151,9 @@ Open the Django admin at http://127.0.0.1:8000/admin/ and log in using the super
-
+## Performace data of vendor
+### using httpie:
+- http POST http://127.0.0.1:8000/api/vendors/{vendor_id}/performance/ 
+### About this API endpoint:
+- here this endpoint is used to acknowledge the vendor with given vendor_id 
 ## Update acknowledgment_data and trigger the recalculation of average_response_time:
 ### using curl:
 - curl -H "Authorization: Token your_obtained_token" -X POST http://127.0.0.1:8000/api/purchase_orders/{po_id}/acknowledge/
